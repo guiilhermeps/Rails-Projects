@@ -1,0 +1,32 @@
+<h1>Seja Bem-Vindo!</h1>
+
+<p>
+  <%= Time.now.to_formatted_s(:time) %>
+</p>
+
+<p>
+  Data de acesso: <%= Date.today.to_formatted_s(:long) %>
+</p>
+<p>
+  Guilherme Pereira
+</p>
+
+<p>
+  A soma é: <%= 1 + 1 %>
+</p>
+
+<p>
+  Seu Nome de traz pra frente é <%= "Guilherme".reverse %>
+</p>
+
+<% a = "Minha variavel a" %>
+
+<p>
+  Imprimindo a variavel a: <%= a %>
+</p>
+
+<%# Comentario em ERB %>
+
+<%# link_to "Listagem de Moedas", "/coins" %>
+<%# Ou o famoso 'a href' noraml %>
+<% link_to "Listagem de Moedas", coins_path %>
