@@ -1,14 +1,19 @@
-<h1>Seja Bem-Vindo!</h1>
+<h1> Seja Bem-Vindo! - <%= ambiente_rails %></h1>
+
+<strong> <%= nome_aplicacao %> </strong>
 
 <p>
   <%= Time.now.to_formatted_s(:time) %>
 </p>
 
 <p>
-  Data de acesso: <%= Date.today.to_formatted_s(:long) %>
+  <strong>
+    Data de acesso: <%= data_br(Date.today) %>
+  </strong>
 </p>
+
 <p>
-  Guilherme Pereira
+  <%= @nome %>
 </p>
 
 <p>
@@ -16,7 +21,7 @@
 </p>
 
 <p>
-  Seu Nome de traz pra frente é <%= "Guilherme".reverse %>
+  Meu Nome de traz pra frente é <%= @nome.reverse %>
 </p>
 
 <% a = "Minha variavel a" %>
@@ -29,4 +34,4 @@
 
 <%# link_to "Listagem de Moedas", "/coins" %>
 <%# Ou o famoso 'a href' noraml %>
-<% link_to "Listagem de Moedas", coins_path %>
+<%= link_to "Listagem de Moedas", coins_path %>

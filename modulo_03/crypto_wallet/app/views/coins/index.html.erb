@@ -19,7 +19,7 @@
         <td><%= coin.acronym %></td>
         <%# Usando ERB com html, porem abaixo tem uma opção apenas ERB %>
         <!-- <td> <img src="<%#= coin.url_image %>" alt="Logo da Moeda" width="50px" height="50px"/> </td> -->
-        <td> <%= image_tag coin.url_image, size: "50x50" %> </td
+        <td> <%= image_tag coin.url_image, size: "50x50" %> </td>
         <td> <%= link_to 'Mostrar', coin %> </td>
         <td> <%= link_to 'Editar', edit_coin_path(coin) %> </td>
         <td> <%= link_to 'Excluir', coin, method: :delete, data: { confirm: 'tem certeza?' } %> </td>
