@@ -2,6 +2,8 @@
 
 <strong> <%= nome_aplicacao %> </strong>
 
+<%= render "menu" %>
+
 <p>
   <%= Time.now.to_formatted_s(:time) %>
 </p>
@@ -34,4 +36,3 @@
 
 <%# link_to "Listagem de Moedas", "/coins" %>
 <%# Ou o famoso 'a href' noraml %>
-<%= link_to "Listagem de Moedas", coins_path %>
